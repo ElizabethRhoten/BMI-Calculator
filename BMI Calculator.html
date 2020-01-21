@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>BMI Calculator</title>
+<style>
+html {background-color:lightblue}
+h1 {text-align:center;font-size:3em}
+body {text-align:center;font-size:2em}
+</style>	
+
+<script>
+	function calcBMI() {
+	
+	var height, weight;
+	height=form1.height.value;
+	weight=form1.weight.value;
+	
+			
+	height=parseFloat(height);
+	weight=parseFloat(weight);
+	BMI= (weight * 703) / (height * height);
+	form1.BMI.value=BMI;
+	
+	
+	}
+	
+	
+	
+</script>
+</head>
+
+<body>
+<h1>BMI Calculator</h1>
+<hr>
+
+<form id="form1">
+	<label for="height">Height (inches)</label>
+	<input type="text" id="height"  /><br><br>
+	<label for="weight">Weight (lbs)</label>
+	<input type="text" id="weight"  /><br><br>
+	<label for="BMI">BMI</label>
+	<input type="text" id="BMI" /><br><br>
+	
+	<input type="button" value="Calculate" onclick="calcBMI();"/><br><br>
+	
+	
+	
+	
+	
+</body>
+</html>
